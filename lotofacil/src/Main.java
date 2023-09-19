@@ -1,9 +1,8 @@
 import java.util.Scanner;
 import java.util.Random;
 import java.io.IOException;
-
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner ler = new Scanner(System.in);
         Random sortear = new Random();
@@ -28,35 +27,28 @@ public class Main {
                     System.out.println("Digite um numero entre 0-100: \n");
                     num = ler.nextInt();
                     random = sortear.nextInt(101);
-                    if (num >= 0 && num <= 100) {
-                        if (num == random) {
-                            System.out.println("Você ganhou R$ 1.000,00 reais. \n");
+                        if (num >= 0 && num <= 100) {
+                            if (num == random) {
+                                System.out.println("Você ganhou R$ 1.000,00 reais. \n");
+                            } else {
+                                System.out.println("Que pena! O número sorteado foi:" + random);
+                            }
                         } else {
-                            System.out.println("Que pena! O número sorteado foi:" + random);
+                            System.out.println("Número inválido!!");
                         }
-                    } else {
-                        System.out.println("Número inválido!!");
-                    }
                     break;
                 case 2:
                     System.out.println("Apostando de A à Z");
-                    int lerLetra;
                     System.out.println("Digite uma letra: \n");
-
-                    try {
-                        lerLetra = System.in.read();
-                        char letra = (char) lerLetra;
-                        char letraMaiuscula = Character.toUpperCase(letra);
-                        char letraPremiada = 'G';
-                        if (Character.isLetter(letraMaiuscula)) {
-                            if (letraPremiada == letraMaiuscula){
-                                System.out.println("Você ganhou R$ 500,00 reais.");
-                            } else {
+                    char lerLetra = (char) System.in.read();
+                    char letraMaiuscula = Character.toUpperCase(lerLetra);
+                    char letraPremiada = 'G';
+                    if (Character.isLetter(letraMaiuscula)) {
+                        if (letraPremiada == letraMaiuscula) {
+                            System.out.println("Você ganhou R$ 500,00 reais.");
+                        } else {
                             System.out.println("Que pena! A letra sorteada foi: " + letraPremiada);
                         }
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
                     }
                     break;
                 case 3:
