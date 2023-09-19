@@ -8,6 +8,12 @@ Antes de começar, certifique-se de que você tenha o seguinte pré-requisito in
 
 - **Java Development Kit (JDK):** É necessário ter a versão 17.0.8 ou superior do JDK instalada. Você pode verificar a versão do JDK instalada executando `java -version` no terminal.
 
+## Bibliotecas ultilizadas
+
+Scanner: https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
+Random: https://docs.oracle.com/javase/8/docs/api/java/util/Random.html
+IOException: https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/IOException.html
+
 ## Executando o Projeto
 
 Aqui estão as etapas para executar o projeto Lotofácil em Java:
