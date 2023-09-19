@@ -10,9 +10,10 @@ Antes de começar, certifique-se de que você tenha o seguinte pré-requisito in
 
 ## Bibliotecas ultilizadas
 
-Scanner: https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
-Random: https://docs.oracle.com/javase/8/docs/api/java/util/Random.html
-IOException: https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/IOException.html
+
+1. [Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
+2. [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)
+3. [IOException](https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/IOException.html)
 
 ## Executando o Projeto
 
